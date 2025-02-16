@@ -10,6 +10,7 @@ import { client, urlFor, photosByCategory } from "./lib/sanity";
 // TODO: Move the main content of the gallery/portfolio to a page and use navigation for moving between pages; portfolio, contact, about
 // TODO: Add a contact form
 // TODO: Style about page/component
+// TODO: Test gitui
 
 function App() {
   const [currentCategory, setCurrentCategory] =
