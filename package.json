@@ -8,7 +8,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "sanity": "sanity dev"
+    "sanity": "sanity dev",
+    "start": "vite",
+    "test": "pnpm test"
   },
   "dependencies": {
     "@sanity/client": "^6.28.0",

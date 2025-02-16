@@ -29,7 +29,7 @@ export function ExampleComponent() {
       {data.map((photo) => (
         <div key={photo._id}>
           <h2>{photo.title}</h2>
-          <img src={urlFor(photo.image).width(800).url()} alt={photo.title} />
+          <img src={urlFor(photo.image.asset._ref).width(800).url()} alt={photo.title} />
         </div>
       ))}
     </div>
