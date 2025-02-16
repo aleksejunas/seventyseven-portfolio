@@ -7,6 +7,8 @@ import { Instagram } from "lucide-react";
 import { client, urlFor, photosByCategory } from "./lib/sanity";
 
 // TODO: Enable image click for bigger image
+// TODO: Move the main content of the gallery/portfolio to a page and use navigation for moving between pages; portfolio, contact, about
+// TODO: Add a contact form
 
 function App() {
   const [currentCategory, setCurrentCategory] =
