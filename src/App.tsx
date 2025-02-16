@@ -6,7 +6,6 @@ import { categories } from "./data/photos";
 import { Instagram } from "lucide-react";
 import { client, urlFor, photosByCategory } from "./lib/sanity";
 
-// TODO: Set up nvim.avante with openai instead of claude
 // TODO: Add batch upload for photos
 // TODO: Set up navigation and move the main content of the gallery/portfolio to a page and use navigation for moving between pages; portfolio, contact, about
 //   SUB TODO: Add a navbar component to have in the top right corner for navigation
