@@ -15,7 +15,7 @@ import { client, urlFor, photosByCategory } from "./lib/sanity";
 function App() {
   const [currentCategory, setCurrentCategory] =
     useState<Category>("architecture");
-  const [isGridView, setIsGridView] = useState(false);
+  const [isGridView, setIsGridView] = useState(true);
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -83,7 +83,7 @@ function App() {
                   className="aspect-[4/3] overflow-hidden rounded-lg"
                 >
                   <img
-                    src={urlFor(photo.image).width(1200).url()}
+                    src={urlFor(photo.image.asset._ref).width(1200).url()}
                     alt={photo.alt}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
