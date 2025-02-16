@@ -9,7 +9,9 @@ import { client, urlFor, photosByCategory } from "./lib/sanity";
 // TODO: Set up nvim.avante with openai instead of claude
 // TODO: Add batch upload for photos
 // TODO: Set up navigation and move the main content of the gallery/portfolio to a page and use navigation for moving between pages; portfolio, contact, about
+//   SUB TODO: Add a navbar component to have in the top right corner for navigation
 // TODO: Some sort of picker to choose the category for the photo
+// TODO: Add more sanity fields to learn more about sanity and how to use it
 // TODO: Enable image click for bigger image
 // TODO: Add a contact form
 // TODO: Style about page/component

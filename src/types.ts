@@ -1,10 +1,12 @@
-export type Category = 'portraits' | 'cars' | 'architecture' | 'motorbikes';
+// TODO: Add more categories
+
+export type Category = "portraits" | "cars" | "architecture" | "motorbikes";
 
 export interface SanityImage {
-  _type: 'image';
+  _type: "image";
   asset: {
     _ref: string;
-    _type: 'reference';
+    _type: "reference";
   };
 }
 
@@ -21,3 +23,4 @@ export interface CategoryData {
   title: string;
   description: string;
 }
+
