@@ -6,16 +6,18 @@ import { categories } from "./data/photos";
 import { Instagram } from "lucide-react";
 import { client, urlFor, photosByCategory } from "./lib/sanity";
 
+// TODO: Set up nvim.avante with openai instead of claude
+// TODO: Add batch upload for photos
+// TODO: Set up navigation and move the main content of the gallery/portfolio to a page and use navigation for moving between pages; portfolio, contact, about
+// TODO: Some sort of picker to choose the category for the photo
 // TODO: Enable image click for bigger image
-// TODO: Move the main content of the gallery/portfolio to a page and use navigation for moving between pages; portfolio, contact, about
 // TODO: Add a contact form
 // TODO: Style about page/component
-// TODO: Test gitui
 
 function App() {
   const [currentCategory, setCurrentCategory] =
     useState<Category>("architecture");
-  const [isGridView, setIsGridView] = useState(false);
+  const [isGridView, setIsGridView] = useState(true);
   const [photos, setPhotos] = useState<Photo[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -83,7 +85,7 @@ function App() {
                   className="aspect-[4/3] overflow-hidden rounded-lg"
                 >
                   <img
-                    src={urlFor(photo.image).width(1200).url()}
+                    src={urlFor(photo.image.asset._ref).width(1200).url()}
                     alt={photo.alt}
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
